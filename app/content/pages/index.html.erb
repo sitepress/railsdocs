@@ -1,0 +1,13 @@
+---
+title: Getting started with Sitepress in Rails
+---
+
+<article class="prose">
+  <h1><%= current_page.data.fetch("title") %></h1>
+
+  <ul>
+    <%- PageModel.all.each do |page|  %>
+      <li><%= link_to_page page %></li>
+    <% end %>
+  </ul>
+</article>

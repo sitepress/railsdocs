@@ -1,0 +1,40 @@
+# You should read the docs at https://github.com/vmg/redcarpet and probably
+# delete a bunch of stuff below if you don't need it.
+
+class ApplicationMarkdown < MarkdownRails::Renderer::Rails
+  # Reformats your boring punctation like " and " into “ and ” so you can look
+  # and feel smarter. Read the docs at https://github.com/vmg/redcarpet#also-now-our-pants-are-much-smarter
+  include Redcarpet::Render::SmartyPants
+
+  # Uncomment and run `bundle add rouge` for syntax highlighting
+  # include MarkdownRails::Helper::Rouge
+
+  # If you need access to ActionController::Base.helpers, you can delegate by uncommenting
+  # and adding to the list below. Several are already included for you in the `MarkdownRails::Renderer::Rails`,
+  # but you can add more here.
+  #
+  # To see a list of methods available run `bin/rails runner "puts ActionController::Base.helpers.public_methods.sort"`
+  #
+  # delegate \
+  #   :request,
+  #   :cache,
+  #   :turbo_frame_tag,
+  # to: :helpers
+
+  # These flags control features in the Redcarpet renderer, which you can read
+  # about at https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
+  # Make sure you know what you're doing if you're using this to render user inputs.
+  def enable
+    [:fenced_code_blocks]
+  end
+
+  # These methods are called as the Markdown document is parsed. Block-level calls are
+  # documented at https://github.com/vmg/redcarpet#block-level-calls and span level calls
+  # are documented at https://github.com/vmg/redcarpet#block-level-calls so feel free to
+  # add more as you see fit.
+  def block_code(code, language)
+    content_tag :pre, class: language do
+      code # You could implement syntax highlighting here with Rouge.
+    end
+  end
+end
