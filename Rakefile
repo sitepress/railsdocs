@@ -2,6 +2,7 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require_relative "config/application"
+require "pathname"
 
 Rails.application.load_tasks
 
@@ -23,12 +24,21 @@ class DocumentImporter
   end
 end
 
-desc "Import Rails docs"
-task :import do
-  DocumentImporter.new(root_path: "app/content/source").documents.each do |document|
-    # pp document
-    source = document["path"]
-    target = "app/content/pages/#{document["path"].basename(".md")}.html.md"
-    cp source, target
+namespace :guides do
+  desc "Import Rails docs"
+  task :import do
+    DocumentImporter.new(root_path: "app/content/source").documents.each do |doc|
+      source = doc["path"]
+      target = "app/content/pages/#{source.basename(".md")}.html.md"
+      cp source, target
+
+      asset = Sitepress::Asset.new(path: target)
+      asset.data = {
+        "title" => doc["name"],
+        "description" => doc["description"],
+        "section" => doc["section"]
+      }
+      asset.save
+    end
   end
 end
