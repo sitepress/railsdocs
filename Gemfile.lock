@@ -16,7 +16,8 @@ GIT
 
 GIT
   remote: https://github.com/sitepress/sitepress.git
-  revision: ab6d478dfc995a8cb95274c6b4d292733663766a
+  revision: b08b3b5de2db8670a989d656a1f1408e756bf23c
+  branch: version-4
   specs:
     sitepress-core (3.2.1)
       mime-types (>= 2.99)
@@ -122,6 +123,8 @@ GEM
       reline (>= 0.3.1)
     device_detector (1.1.0)
     diff-lcs (1.5.0)
+    dockerfile-rails (1.2.3)
+      rails
     errbase (0.2.2)
     erubi (1.12.0)
     factory_bot (6.2.1)
@@ -170,7 +173,11 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.2-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.14.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.6)
     public_suffix (5.0.1)
@@ -252,7 +259,11 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.0.23-aarch64-linux)
+      railties (>= 6.0.0)
     tailwindcss-rails (2.0.23-arm64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.23-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.2)
@@ -284,7 +295,9 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
+  aarch64-linux
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   ahoy_matey
@@ -292,6 +305,7 @@ DEPENDENCIES
   capybara
   chronic (~> 0.10.2)
   debug
+  dockerfile-rails (>= 1.2)
   factory_bot
   groupdate
   importmap-rails

@@ -77,7 +77,7 @@ gem "majesticmonolith"
 gem "nopassword", git: "https://github.com/rocketshipio/nopassword.git", branch: "main"
 gem "pundit"
 gem "view_component"
-gem "sitepress-rails", git: "https://github.com/sitepress/sitepress.git"
+gem "sitepress-rails", git: "https://github.com/sitepress/sitepress.git", branch: "version-4"
 gem "markdown-rails", git: "https://github.com/sitepress/markdown-rails.git"
 gem "ahoy_matey"
 gem "groupdate"
@@ -87,3 +87,5 @@ gem "chronic", "~> 0.10.2"
 gem "rack-canonical-host", "~> 1.1"
 
 gem "rouge", "~> 4.1"
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
