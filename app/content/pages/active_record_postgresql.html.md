@@ -1,3 +1,9 @@
+---
+title: Active Record and PostgreSQL
+description: This guide covers PostgreSQL specific usage of Active Record.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record and PostgreSQL

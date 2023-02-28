@@ -1,3 +1,10 @@
+---
+title: Using Rails for API-only Applications
+description: This guide explains how to effectively use Rails to develop a JSON API
+  application.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Using Rails for API-only Applications

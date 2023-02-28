@@ -1,3 +1,13 @@
+---
+title: Action View Helpers
+description: 'Action View has helpers for handling everything from formatting dates
+  and linking to images, to sanitizing and localizing content. This guide introduces
+  a few of the more common Action View helpers.
+
+  '
+section: Views
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action View Helpers

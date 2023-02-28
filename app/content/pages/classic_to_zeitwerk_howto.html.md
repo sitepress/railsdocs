@@ -1,3 +1,10 @@
+---
+title: Classic to Zeitwerk HOWTO
+description: This guide documents how to migrate Rails applications from `classic`
+  to `zeitwerk` mode.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Classic to Zeitwerk HOWTO

@@ -1,3 +1,11 @@
+---
+title: Debugging Rails Applications
+description: This guide describes how to debug Rails applications. It covers the different
+  ways of achieving this and how to understand what is happening "behind the scenes"
+  of your code.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Debugging Rails Applications

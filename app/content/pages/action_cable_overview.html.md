@@ -1,3 +1,14 @@
+---
+title: Action Cable Overview
+description: 'Action Cable integrates WebSockets with the rest of your Rails application.
+  It allows for real-time features to be written in Ruby in the same style and form
+  as the rest of your Rails application. This guide explains how Action Cable works,
+  and how to use WebSockets to create real-time features.
+
+  '
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action Cable Overview

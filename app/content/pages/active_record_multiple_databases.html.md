@@ -1,3 +1,9 @@
+---
+title: Multiple Databases with Active Record
+description: This guide covers using multiple databases in your application.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Multiple Databases with Active Record

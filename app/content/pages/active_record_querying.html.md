@@ -1,3 +1,13 @@
+---
+title: Active Record Query Interface
+description: 'Instead of using raw SQL to find database records, Active Record provides
+  better ways to carry out the same operations. This guide covers different ways to
+  retrieve data from the database using Active Record.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Query Interface

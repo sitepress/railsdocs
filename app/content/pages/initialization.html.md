@@ -1,3 +1,12 @@
+---
+title: The Rails Initialization Process
+description: 'This guide explains the internals of the initialization process in Rails.
+  It is an extremely in-depth guide and recommended for advanced Rails developers.
+
+  '
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 The Rails Initialization Process

@@ -1,3 +1,9 @@
+---
+title: Getting Started with Rails
+description: Everything you need to know to install Rails and create your first application.
+section: Start Here
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Getting Started with Rails

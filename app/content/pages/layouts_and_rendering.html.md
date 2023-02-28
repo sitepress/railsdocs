@@ -1,3 +1,11 @@
+---
+title: Layouts and Rendering in Rails
+description: This guide covers the basic layout features of Action Controller and
+  Action View, including rendering and redirecting, using content_for blocks, and
+  working with partials.
+section: Views
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Layouts and Rendering in Rails

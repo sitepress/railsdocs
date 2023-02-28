@@ -1,3 +1,10 @@
+---
+title: Securing Rails Applications
+description: This guide describes common security problems in web applications and
+  how to avoid them with Rails.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Securing Rails Applications

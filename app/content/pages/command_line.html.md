@@ -1,3 +1,12 @@
+---
+title: The Rails Command Line
+description: 'There are a few commands that are absolutely critical to your everyday
+  usage of Rails. This guide covers the command line tools provided by Rails.
+
+  '
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 The Rails Command Line

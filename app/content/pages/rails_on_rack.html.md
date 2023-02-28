@@ -1,3 +1,10 @@
+---
+title: Rails on Rack
+description: This guide covers Rails integration with Rack and interfacing with other
+  Rack components.
+section: Extending Rails
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Rails on Rack

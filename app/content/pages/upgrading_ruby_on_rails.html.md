@@ -1,3 +1,12 @@
+---
+title: Upgrading Ruby on Rails
+description: 'This guide provides steps to be followed when you upgrade your applications
+  to a newer version of Ruby on Rails.
+
+  '
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Upgrading Ruby on Rails

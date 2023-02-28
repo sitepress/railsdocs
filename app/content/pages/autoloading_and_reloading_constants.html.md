@@ -1,3 +1,10 @@
+---
+title: Autoloading and Reloading Constants
+description: This guide documents how autoloading and reloading constants work (Zeitwerk
+  mode).
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Autoloading and Reloading Constants

@@ -1,3 +1,13 @@
+---
+title: Active Record Validations
+description: 'Validations are used to ensure that only valid data is saved into your
+  database. This guide teaches you how to validate the state of objects before they
+  go into the database, using Active Record''s validations feature.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Validations

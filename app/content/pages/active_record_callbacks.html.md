@@ -1,3 +1,13 @@
+---
+title: Active Record Callbacks
+description: 'Callbacks make it possible to write code that will run whenever an object
+  is created, updated, destroyed, etc. This guide teaches you how to hook into this
+  object life cycle of Active Record objects.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Callbacks

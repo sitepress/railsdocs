@@ -1,3 +1,9 @@
+---
+title: Configuring Rails Applications
+description: This guide covers the basic configuration settings for a Rails application.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Configuring Rails Applications

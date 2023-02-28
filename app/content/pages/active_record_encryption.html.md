@@ -1,3 +1,9 @@
+---
+title: Active Record Encryption
+description: This guide covers encrypting your database information using Active Record.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Encryption

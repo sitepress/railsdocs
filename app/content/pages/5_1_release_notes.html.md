@@ -1,3 +1,9 @@
+---
+title: Version 5.1 - April 2017
+description: Release notes for Rails 5.1.
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Ruby on Rails 5.1 Release Notes

@@ -1,3 +1,12 @@
+---
+title: Action View Overview
+description: 'Action View is responsible for generating the HTML for web responses.
+  This guide provides an introduction to Action View.
+
+  '
+section: Views
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action View Overview

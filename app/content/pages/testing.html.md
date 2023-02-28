@@ -1,3 +1,10 @@
+---
+title: Testing Rails Applications
+description: This is a rather comprehensive guide to the various testing facilities
+  in Rails. It covers everything from 'What is a test?' to Integration Testing. Enjoy.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Testing Rails Applications

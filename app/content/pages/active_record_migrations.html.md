@@ -1,3 +1,13 @@
+---
+title: Active Record Migrations
+description: 'Migrations are a feature of Active Record that allows you to evolve
+  your database schema over time. Rather than write schema modifications in pure SQL,
+  migrations allow you to use a Ruby DSL to describe changes to your tables.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Migrations

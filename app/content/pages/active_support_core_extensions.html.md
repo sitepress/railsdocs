@@ -1,3 +1,13 @@
+---
+title: Active Support Core Extensions
+description: 'Active Support provides Ruby language extensions and utilities. It enriches
+  the Ruby language for the development of Rails applications, and for the development
+  of Ruby on Rails itself.
+
+  '
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Support Core Extensions

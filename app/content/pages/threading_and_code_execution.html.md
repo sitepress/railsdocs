@@ -1,3 +1,10 @@
+---
+title: Threading and Code Execution in Rails
+description: This guide describes the considerations needed and tools available when
+  working directly with concurrency in a Rails application.
+section: Extending Rails
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Threading and Code Execution in Rails

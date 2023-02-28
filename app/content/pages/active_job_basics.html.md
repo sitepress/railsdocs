@@ -1,3 +1,13 @@
+---
+title: Active Job Basics
+description: 'Active Job is a framework for declaring background jobs and making them
+  run on a variety of queuing backends. This guide provides you with all you need
+  to get started creating, enqueuing, and executing background jobs.
+
+  '
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Job Basics

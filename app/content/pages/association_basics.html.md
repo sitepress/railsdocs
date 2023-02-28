@@ -1,3 +1,12 @@
+---
+title: Active Record Associations
+description: 'In Active Record, an association is a connection between two Active
+  Record models. This guide covers all the associations provided by Active Record.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Associations

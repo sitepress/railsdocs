@@ -1,3 +1,10 @@
+---
+title: Active Support Instrumentation
+description: This guide explains how to use the instrumentation API inside of Active
+  Support to measure events inside of Rails and other Ruby code.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Support Instrumentation

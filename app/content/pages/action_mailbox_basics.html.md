@@ -1,3 +1,9 @@
+---
+title: Action Mailbox Basics
+description: This guide describes how to use Action Mailbox to receive emails.
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action Mailbox Basics

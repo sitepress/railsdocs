@@ -1,3 +1,13 @@
+---
+title: Working with JavaScript in Rails
+description: 'This guide explains how to use import maps or jsbundling-rails to include
+  JavaScript in Rails applications, and covers the basics of working with Turbo in
+  Rails.
+
+  '
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Working with JavaScript in Rails

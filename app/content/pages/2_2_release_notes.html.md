@@ -1,3 +1,9 @@
+---
+title: Version 2.2 - November 2008
+description: Release notes for Rails 2.2.
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Ruby on Rails 2.2 Release Notes

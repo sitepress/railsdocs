@@ -1,3 +1,14 @@
+---
+title: Active Model Basics
+description: 'Active Model allows you to create plain Ruby objects that integrate
+  with Action Pack, but don''t need Active Record for database persistence. Active
+  Model also helps build custom ORMs for use outside of the Rails framework. This
+  guide provides you with all you need to get started using Active Model classes.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Model Basics

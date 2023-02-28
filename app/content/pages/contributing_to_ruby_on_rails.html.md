@@ -1,3 +1,10 @@
+---
+title: Contributing to Ruby on Rails
+description: Rails is not "someone else's framework". This guide covers a variety
+  of ways that you can get involved in the ongoing development of Rails.
+section: Contributing
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Contributing to Ruby on Rails

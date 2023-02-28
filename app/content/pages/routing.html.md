@@ -1,3 +1,13 @@
+---
+title: Rails Routing from the Outside In
+description: 'The Rails router recognizes URLs and dispatches them to a controller''s
+  action. This guide covers the user-facing features of Rails routing. If you want
+  to understand how to use routing in your own Rails applications, start here.
+
+  '
+section: Controllers
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Rails Routing from the Outside In

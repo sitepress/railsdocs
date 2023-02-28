@@ -1,3 +1,10 @@
+---
+title: 'Caching with Rails: An Overview'
+description: This guide is an introduction to speeding up your Rails application with
+  caching.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Caching with Rails: An Overview

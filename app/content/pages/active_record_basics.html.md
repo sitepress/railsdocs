@@ -1,3 +1,13 @@
+---
+title: Active Record Basics
+description: 'Active Record allows your models to interact with the application''s
+  database. This guide will get you started with Active Record models and persistence
+  to the database.
+
+  '
+section: Models
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Record Basics

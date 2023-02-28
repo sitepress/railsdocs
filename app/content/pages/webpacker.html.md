@@ -1,3 +1,12 @@
+---
+title: Webpacker
+description: 'This guide will show you how to install and use Webpacker to package
+  JavaScript, CSS, and other assets for the client-side of your Rails application.
+
+  '
+section: Other Components
+---
+
 Webpacker
 =========
 

@@ -1,3 +1,9 @@
+---
+title: Action Text Overview
+description: This guide describes how to use Action Text to handle rich text content.
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action Text Overview

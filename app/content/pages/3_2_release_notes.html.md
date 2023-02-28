@@ -1,3 +1,9 @@
+---
+title: Version 3.2 - January 2012
+description: Release notes for Rails 3.2.
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Ruby on Rails 3.2 Release Notes

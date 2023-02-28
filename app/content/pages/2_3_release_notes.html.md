@@ -1,3 +1,9 @@
+---
+title: Version 2.3 - March 2009
+description: Release notes for Rails 2.3.
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Ruby on Rails 2.3 Release Notes

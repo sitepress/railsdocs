@@ -1,3 +1,11 @@
+---
+title: Creating and Customizing Rails Generators & Templates
+description: This guide covers the process of adding a brand new generator to your
+  extension or providing an alternative to an element of a built-in Rails generator
+  (such as providing alternative test stubs for the scaffold generator).
+section: Extending Rails
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Creating and Customizing Rails Generators & Templates

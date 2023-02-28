@@ -1,3 +1,13 @@
+---
+title: The Asset Pipeline
+description: 'The asset pipeline provides a framework to concatenate and minify or
+  compress JavaScript, CSS and image assets. It also adds the ability to write these
+  assets in other languages and pre-processors such as CoffeeScript, Sass, and ERB.
+
+  '
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 The Asset Pipeline

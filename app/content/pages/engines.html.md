@@ -1,3 +1,13 @@
+---
+title: Getting Started with Engines
+description: 'Engines can be considered miniature applications that provide additional
+  functionality to their host applications. In this guide you will learn how to create
+  your own engine and integrate it with a host application.
+
+  '
+section: Extending Rails
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Getting Started with Engines

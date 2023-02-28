@@ -1,3 +1,12 @@
+---
+title: Action Mailer Basics
+description: 'This guide provides you with all you need to get started in sending
+  emails from your application, and many internals of Action Mailer.
+
+  '
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action Mailer Basics

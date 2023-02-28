@@ -1,3 +1,13 @@
+---
+title: Active Storage Overview
+description: 'Active Storage facilitates uploading files to a cloud storage service,
+  transforming uploads and extracting metadata. This guide covers how to attach files
+  to your Active Record models.
+
+  '
+section: Other Components
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Active Storage Overview

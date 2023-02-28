@@ -1,3 +1,10 @@
+---
+title: Maintenance Policy
+description: What versions of Ruby on Rails are currently supported, and when to expect
+  new versions.
+section: Policies
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Maintenance Policy for Ruby on Rails

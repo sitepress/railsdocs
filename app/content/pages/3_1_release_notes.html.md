@@ -1,3 +1,9 @@
+---
+title: Version 3.1 - August 2011
+description: Release notes for Rails 3.1.
+section: Release Notes
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Ruby on Rails 3.1 Release Notes

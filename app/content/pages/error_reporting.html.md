@@ -1,3 +1,10 @@
+---
+title: Error Reporting in Rails Applications
+description: This guide introduces ways to manage exceptions that occur in Ruby on
+  Rails applications.
+section: Digging Deeper
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Error Reporting in Rails Applications

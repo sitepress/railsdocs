@@ -1,3 +1,14 @@
+---
+title: Action Controller Overview
+description: 'Action Controllers are the core of a web request in Rails. This guide
+  covers how controllers work and how they fit into the request cycle of your application.
+  It includes sessions, filters, cookies, data streaming, and dealing with exceptions
+  raised by a request, among other topics.
+
+  '
+section: Controllers
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action Controller Overview

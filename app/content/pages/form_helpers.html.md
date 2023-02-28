@@ -1,3 +1,13 @@
+---
+title: Action View Form Helpers
+description: 'HTML forms can quickly become tedious to write and maintain because
+  of the need to handle form control naming and its numerous attributes. Rails does
+  away with this complexity by providing view helpers for generating form markup.
+
+  '
+section: Views
+---
+
 **DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
 
 Action View Form Helpers
