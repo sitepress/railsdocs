@@ -1,6 +1,6 @@
 <%= render_layout "body" do %>
-  <div class="flex flex-col gap-20">
-    <header class="flex flex-col gap-4">
+  <div class="grid grid-cols-2 gap-20">
+    <header class="col-span-2 flex flex-col gap-4">
       <h1 class="font-bold text-5xl"><%= current_page.data.title %></h1>
       <ul class="flex flex-row gap-4">
         <li>
@@ -15,29 +15,33 @@
       </ul>
     </header>
 
-    <div class="flex flex-row flex-row-reverse gap-20">
-      <nav class="flex flex-col gap-4">
-        <ul class="flex flex-col gap-4">
-          <%- toc(current_page).each do |h1| %>
-            <li>
-              <%=link_to h1.text, h1.url, class: "font-semibold" %>
-              <ul>
-                <% h1.children.each do |h2| %>
-                  <li class="ml-4 text-medium">
-                    <%=link_to h2.text, h2.url %>
-                  </li>
-                <% end %>
-              </ul>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
+    <article class="prose">
+      <%= remove_h1 do %>
+        <%= yield %>
+      <% end %>
+    </article>
 
-      <article class="prose">
-        <%= remove_h1 do %>
-          <%= yield %>
+    <nav class="leading-7">
+      <ul>
+        <%- toc(current_page).each do |h1| %>
+          <li class="mb-6">
+            <%=link_to h1.text, h1.url, class: "font-semibold" %>
+            <ul class="text-sm mt-1">
+              <% h1.children.each do |h2| %>
+                <li class="ml-2">
+                  <%=link_to h2.text, h2.url, class: "py-1 block" %>
+                </li>
+              <% end %>
+            </ul>
+          </li>
         <% end %>
-      </article>
-    </div>
+      </ul>
+    </nav>
+
+    <footer class="col-span-2 flex flex-col gap-4">
+      <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License</p>
+
+      <p>"Rails", "Ruby on Rails", and the Rails logo are trademarks of David Heinemeier Hansson. All rights reserved.</p>
+    </footer>
   </div>
 <% end %>
