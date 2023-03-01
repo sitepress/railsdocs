@@ -5,8 +5,6 @@ description: Rails is not "someone else's framework". This guide covers a variet
 redirect_from: "/contributing_to_ruby_on_rails.html"
 ---
 
-<!-- Read guides at https://guides.rubyonrails.org -->
-
 Contributing to Ruby on Rails
 =============================
 
