@@ -1,6 +1,6 @@
 <%= render_layout "body" do %>
+  <h1 class="text-5xl font-bold mb-20"><%= current_page.data.fetch("title") %></h1>
   <article class="prose">
-    <h1><%= current_page.data.fetch("title") %></h1>
     <%= yield %>
   </article>
 <% end %>
