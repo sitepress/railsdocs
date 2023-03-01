@@ -5,7 +5,7 @@ description: This guide describes the considerations needed and tools available 
 section: Extending Rails
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Threading and Code Execution in Rails
 =====================================

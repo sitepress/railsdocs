@@ -8,7 +8,7 @@ description: 'Action View has helpers for handling everything from formatting da
 section: Views
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Action View Helpers
 ====================

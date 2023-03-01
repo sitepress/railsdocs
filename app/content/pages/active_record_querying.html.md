@@ -8,7 +8,7 @@ description: 'Instead of using raw SQL to find database records, Active Record p
 section: Models
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Record Query Interface
 =============================
@@ -94,7 +94,7 @@ class Supplier < ApplicationRecord
 end
 ```
 
-![Diagram of all of the bookstore models](images/active_record_querying/bookstore_models.png)
+![Diagram of all of the bookstore models](active_record_querying/bookstore_models.png)
 
 Retrieving Objects from the Database
 ------------------------------------

@@ -5,7 +5,7 @@ description: This guide documents how autoloading and reloading constants work (
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Autoloading and Reloading Constants
 ===================================

@@ -6,7 +6,7 @@ description: This guide covers the basic layout features of Action Controller an
 section: Views
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Layouts and Rendering in Rails
 ==============================

@@ -26,4 +26,8 @@ module PageHelper
   def render_layout(layout, **kwargs, &block)
     render html: capture(&block), layout: "layouts/#{layout}", **kwargs
   end
+
+  def section(name, &html)
+    render(layout: "helpers/page_helper/section", locals: { section: name }, &html)
+  end
 end

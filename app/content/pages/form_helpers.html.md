@@ -8,7 +8,7 @@ description: 'HTML forms can quickly become tedious to write and maintain becaus
 section: Views
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Action View Form Helpers
 ========================

@@ -7,7 +7,7 @@ description: 'This guide provides you with all you need to get started in sendin
 section: Other Components
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Action Mailer Basics
 ====================

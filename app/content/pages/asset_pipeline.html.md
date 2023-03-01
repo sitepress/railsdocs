@@ -8,7 +8,7 @@ description: 'The asset pipeline provides a framework to concatenate and minify 
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 The Asset Pipeline
 ==================

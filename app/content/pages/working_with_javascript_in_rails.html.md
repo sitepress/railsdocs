@@ -8,7 +8,7 @@ description: 'This guide explains how to use import maps or jsbundling-rails to 
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Working with JavaScript in Rails
 ================================

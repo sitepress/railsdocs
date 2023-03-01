@@ -24,10 +24,17 @@ class DocumentImporter
   end
 end
 
+def find_and_replace(match, with:, path:)
+  puts "find_and_replace #{match} with #{with} in #{path}"
+  # Read the contents of the file into a variable
+  File.write path, File.read(path).gsub(match, with)
+end
+
 namespace :guides do
   desc "Import Rails docs"
   task :import do
-    DocumentImporter.new(root_path: "app/content/source").documents.each do |doc|
+    importer = DocumentImporter.new(root_path: "app/content/source")
+    importer.documents.each do |doc|
       source = doc["path"]
       target = "app/content/pages/#{source.basename(".md")}.html.md"
       cp source, target
@@ -39,6 +46,13 @@ namespace :guides do
         "section" => doc["section"]
       }
       asset.save
+
+      # Get rid of this error ... it shouldn't be needed if content is managed well
+      find_and_replace "**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**", with: "<!-- Read guides at https://guides.rubyonrails.org -->", path: target
+
+      # We don't need to preface assets with `images/` since Markdown
+      # can tap into the Rails asset pipeline for us.
+      find_and_replace "](images/", with: "](", path: target
     end
   end
 end

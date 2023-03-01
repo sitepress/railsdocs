@@ -1,0 +1,8 @@
+<h2><%= section %></h2>
+<%= yield %>
+<div class="guides">
+  <% PageModel.section(section).each do |page| %>
+    <h4><%= link_to_page page %></h4>
+    <p><%= page.description %></p>
+  <% end %>
+</div>

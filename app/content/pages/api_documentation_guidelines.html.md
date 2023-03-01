@@ -4,7 +4,7 @@ description: This guide documents the Ruby on Rails API documentation guidelines
 section: Contributing
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 API Documentation Guidelines
 ============================

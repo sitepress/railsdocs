@@ -8,7 +8,7 @@ description: 'The Rails router recognizes URLs and dispatches them to a controll
 section: Controllers
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Rails Routing from the Outside In
 =================================

@@ -7,7 +7,7 @@ description: 'In Active Record, an association is a connection between two Activ
 section: Models
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Record Associations
 ==========================
@@ -108,7 +108,7 @@ class Book < ApplicationRecord
 end
 ```
 
-![belongs_to Association Diagram](images/association_basics/belongs_to.png)
+![belongs_to Association Diagram](association_basics/belongs_to.png)
 
 NOTE: `belongs_to` associations _must_ use the singular term. If you used the pluralized form in the above example for the `author` association in the `Book` model and tried to create the instance by `Book.create(authors: @author)`, you would be told that there was an "uninitialized constant Book::Authors". This is because Rails automatically infers the class name from the association name. If the association name is wrongly pluralized, then the inferred class will be wrongly pluralized too.
 
@@ -157,7 +157,7 @@ end
 
 The main difference from `belongs_to` is that the link column `supplier_id` is located in the other table:
 
-![has_one Association Diagram](images/association_basics/has_one.png)
+![has_one Association Diagram](association_basics/has_one.png)
 
 The corresponding migration might look like this:
 
@@ -203,7 +203,7 @@ end
 
 NOTE: The name of the other model is pluralized when declaring a `has_many` association.
 
-![has_many Association Diagram](images/association_basics/has_many.png)
+![has_many Association Diagram](association_basics/has_many.png)
 
 The corresponding migration might look like this:
 
@@ -255,7 +255,7 @@ class Patient < ApplicationRecord
 end
 ```
 
-![has_many :through Association Diagram](images/association_basics/has_many_through.png)
+![has_many :through Association Diagram](association_basics/has_many_through.png)
 
 The corresponding migration might look like this:
 
@@ -341,7 +341,7 @@ class AccountHistory < ApplicationRecord
 end
 ```
 
-![has_one :through Association Diagram](images/association_basics/has_one_through.png)
+![has_one :through Association Diagram](association_basics/has_one_through.png)
 
 The corresponding migration might look like this:
 
@@ -384,7 +384,7 @@ class Part < ApplicationRecord
 end
 ```
 
-![has_and_belongs_to_many Association Diagram](images/association_basics/habtm.png)
+![has_and_belongs_to_many Association Diagram](association_basics/habtm.png)
 
 The corresponding migration might look like this:
 
@@ -538,7 +538,7 @@ class CreatePictures < ActiveRecord::Migration[7.1]
 end
 ```
 
-![Polymorphic Association Diagram](images/association_basics/polymorphic.png)
+![Polymorphic Association Diagram](association_basics/polymorphic.png)
 
 ### Self Joins
 

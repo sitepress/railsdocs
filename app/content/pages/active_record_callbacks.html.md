@@ -8,7 +8,7 @@ description: 'Callbacks make it possible to write code that will run whenever an
 section: Models
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Record Callbacks
 =======================

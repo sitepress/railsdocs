@@ -7,7 +7,7 @@ description: 'This guide explains the internals of the initialization process in
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 The Rails Initialization Process
 ================================

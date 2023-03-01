@@ -7,7 +7,7 @@ class ApplicationMarkdown < MarkdownRails::Renderer::Rails
   include Redcarpet::Render::SmartyPants
 
   # Uncomment and run `bundle add rouge` for syntax highlighting
-  # include MarkdownRails::Helper::Rouge
+  include MarkdownRails::Helper::Rouge
 
   # If you need access to ActionController::Base.helpers, you can delegate by uncommenting
   # and adding to the list below. Several are already included for you in the `MarkdownRails::Renderer::Rails`,
@@ -25,16 +25,14 @@ class ApplicationMarkdown < MarkdownRails::Renderer::Rails
   # about at https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
   # Make sure you know what you're doing if you're using this to render user inputs.
   def enable
-    [:fenced_code_blocks]
+    [:fenced_code_blocks, :tables]
   end
 
-  # These methods are called as the Markdown document is parsed. Block-level calls are
-  # documented at https://github.com/vmg/redcarpet#block-level-calls and span level calls
-  # are documented at https://github.com/vmg/redcarpet#block-level-calls so feel free to
-  # add more as you see fit.
-  def block_code(code, language)
-    content_tag :pre, class: language do
-      code # You could implement syntax highlighting here with Rouge.
+  def header(text, header_level)
+    header_id = text.downcase.gsub(/[^\w\d\s]/, "").gsub(" ", "-")
+    content_tag "h#{header_level}", id: header_id do
+      helpers.link_to text.html_safe, "##{header_id}"
     end
   end
+
 end

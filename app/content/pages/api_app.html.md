@@ -5,7 +5,7 @@ description: This guide explains how to effectively use Rails to develop a JSON 
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Using Rails for API-only Applications
 =====================================

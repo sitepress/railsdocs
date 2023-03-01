@@ -3,11 +3,41 @@ title: Getting started with Sitepress in Rails
 ---
 
 <article class="prose">
-  <h1><%= current_page.data.fetch("title") %></h1>
+  <h1>Rails Docs</h1>
 
-  <ul>
-    <%- PageModel.all.each do |page|  %>
-      <li><%= link_to_page page %></li>
-    <% end %>
-  </ul>
+  <%= section "Models" do %>
+    <p>Query and persist data to your database with Active Record.</p>
+  <% end %>
+
+  <%= section "Views" do %>
+    <p>Render HTML, JSON, XML, and other formats with Action View.</p>
+  <% end %>
+
+  <%= section "Controllers" do %>
+    <p>Route HTTP web requests to application code with Action Controller.</p>
+  <% end %>
+
+  <%= section "Other Components" do %>
+    <p>Handle image uploads, manage long-running tasks with background workers, send and recieve email, and more.</p>
+  <% end %>
+
+  <%= section "Digging Deeper" do %>
+    <p>Lots of other useful parts of Rails.</p>
+  <% end %>
+
+  <%= section "Extending Rails" do %>
+    <p>Build Rails plugins that others can use in their Rails applications.</p>
+  <% end %>
+
+  <%= section "Contributions" do %>
+    <p>How to contribute to the Rails project.</p>
+  <% end %>
+
+  <%= section "Policies" do %>
+    <p>Security and relase policies.</p>
+  <% end %>
+
+  <%= section "Release Notes" do %>
+    <p>Notable changes from Rails releases.</p>
+  <% end %>
 </article>

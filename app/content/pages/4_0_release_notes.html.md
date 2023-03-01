@@ -4,7 +4,7 @@ description: Release notes for Rails 4.0.
 section: Release Notes
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Ruby on Rails 4.0 Release Notes
 ===============================
@@ -61,7 +61,7 @@ $ ruby /path/to/rails/railties/bin/rails new myapp --dev
 Major Features
 --------------
 
-[![Rails 4.0](images/4_0_release_notes/rails4_features.png)](https://guides.rubyonrails.org/images/4_0_release_notes/rails4_features.png)
+[![Rails 4.0](4_0_release_notes/rails4_features.png)](https://guides.rubyonrails.org/images/4_0_release_notes/rails4_features.png)
 
 ### Upgrade
 

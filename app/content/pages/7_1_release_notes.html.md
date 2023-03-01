@@ -4,7 +4,7 @@ description: Release notes for Rails 7.1.
 section: Release Notes
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Ruby on Rails 7.1 Release Notes
 ===============================

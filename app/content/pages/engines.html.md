@@ -8,7 +8,7 @@ description: 'Engines can be considered miniature applications that provide addi
 section: Extending Rails
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Getting Started with Engines
 ============================

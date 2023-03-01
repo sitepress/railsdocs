@@ -5,7 +5,7 @@ description: This guide covers how to build a plugin to extend the functionality
 section: Extending Rails
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 The Basics of Creating Rails Plugins
 ====================================

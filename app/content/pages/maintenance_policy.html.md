@@ -5,7 +5,7 @@ description: What versions of Ruby on Rails are currently supported, and when to
 section: Policies
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Maintenance Policy for Ruby on Rails
 ====================================

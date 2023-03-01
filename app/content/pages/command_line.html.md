@@ -7,7 +7,7 @@ description: 'There are a few commands that are absolutely critical to your ever
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 The Rails Command Line
 ======================

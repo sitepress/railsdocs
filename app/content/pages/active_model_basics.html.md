@@ -9,7 +9,7 @@ description: 'Active Model allows you to create plain Ruby objects that integrat
 section: Models
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Model Basics
 ===================

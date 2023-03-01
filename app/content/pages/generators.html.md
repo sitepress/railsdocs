@@ -6,7 +6,7 @@ description: This guide covers the process of adding a brand new generator to yo
 section: Extending Rails
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Creating and Customizing Rails Generators & Templates
 =====================================================

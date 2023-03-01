@@ -8,7 +8,7 @@ description: 'Active Job is a framework for declaring background jobs and making
 section: Other Components
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Job Basics
 =================

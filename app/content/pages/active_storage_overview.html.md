@@ -8,7 +8,7 @@ description: 'Active Storage facilitates uploading files to a cloud storage serv
 section: Other Components
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Active Storage Overview
 =======================

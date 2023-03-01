@@ -9,7 +9,7 @@ description: 'Action Controllers are the core of a web request in Rails. This gu
 section: Controllers
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Action Controller Overview
 ==========================

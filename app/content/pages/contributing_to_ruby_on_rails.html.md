@@ -5,7 +5,7 @@ description: Rails is not "someone else's framework". This guide covers a variet
 section: Contributing
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Contributing to Ruby on Rails
 =============================

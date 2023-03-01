@@ -4,7 +4,7 @@ description: This guide covers the basic configuration settings for a Rails appl
 section: Digging Deeper
 ---
 
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+<!-- Read guides at https://guides.rubyonrails.org -->
 
 Configuring Rails Applications
 ==============================
