@@ -6,44 +6,37 @@ require "pathname"
 
 Rails.application.load_tasks
 
-class DocumentImporter
-  def initialize(root_path:)
-    @root_path = Pathname.new(root_path)
-    @yaml ||= YAML.load_file @root_path.join("documents.yaml")
-  end
-
-  def documents
-    Enumerator.new do |y|
-      @yaml.each do |section|
-        section["documents"].each do |document|
-          path = @root_path.join("#{File.basename(document["url"], ".html")}.md")
-          y << document.merge("section" => section["name"], "path" => path)
-        end
-      end
-    end
-  end
-end
-
 def find_and_replace(match, with:, path:)
   puts "find_and_replace #{match} with #{with} in #{path}"
   # Read the contents of the file into a variable
   File.write path, File.read(path).gsub(match, with)
 end
 
-namespace :guides do
-  desc "Import Rails docs"
-  task :import do
-    importer = DocumentImporter.new(root_path: "app/content/source")
-    importer.documents.each do |doc|
-      source = doc["path"]
-      target = "app/content/pages/#{source.basename(".md")}.html.md"
+task :import do
+  YAML.load_file("app/content/source/documents.yaml").each do |section|
+    section_name = section["name"]
+    section_dir_name = section_name.downcase.gsub(" ", "_")
+    section_index_path = "app/content/pages/#{section_dir_name}/index.html.md"
+
+    File.write section_index_path, """---
+title: #{section_name}
+layout: section
+---
+
+""" unless File.exist? section_index_path
+
+    section["documents"].each do |doc|
+      basename = File.basename doc["url"], ".html"
+      source = File.join "app/content/source/#{basename}.md"
+      target = File.join "app/content/pages/#{section_dir_name}/#{basename}.html.md"
+
       cp source, target
 
       asset = Sitepress::Asset.new(path: target)
       asset.data = {
         "title" => doc["name"],
         "description" => doc["description"],
-        "section" => doc["section"]
+        "redirect_from" => File.join("/", doc["url"])
       }
       asset.save
 

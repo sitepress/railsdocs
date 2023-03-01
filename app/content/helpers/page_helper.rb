@@ -27,7 +27,7 @@ module PageHelper
     render html: capture(&block), layout: "layouts/#{layout}", **kwargs
   end
 
-  def section(name, &html)
-    render(layout: "helpers/page_helper/section", locals: { section: name }, &html)
+  def order(pages)
+    pages.sort_by { |page| page.data.fetch("order", Float::INFINITY) }
   end
 end

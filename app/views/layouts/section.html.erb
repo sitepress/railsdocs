@@ -1,0 +1,14 @@
+<%= render_layout "body" do %>
+  <article class="prose">
+    <h1><%= current_page.data.fetch("title") %></h1>
+
+    <%= yield %>
+
+    <div class="guides">
+      <% current_page.children.each do |page| %>
+        <h4><%= link_to_page page %></h4>
+        <p><%= page.data.description %></p>
+      <% end %>
+    </div>
+  </article>
+<% end %>
