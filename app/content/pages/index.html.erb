@@ -1,17 +1,35 @@
 ---
 title: Rails Docs
+layout: article
+sections:
+  - start_here
+  - models
+  - views
+  - controllers
+  - other_components
+  - digging_deeper
+  - extending_rails
+  - contributing
+  - policies
+  - release_notes
 ---
 
-<article class="prose">
-  <h1>Rails Docs</h1>
+<aside class="px-8 py-2 rounded shadow-xl border">
+  <p>
+    <span class="font-semibold">👋 Hello there!</span> This website explores ways the <a href="https://guides.rubyonrails.org">Rails Guides</a> could be improved, including making them easier for more people to edit.
+  </p>
 
-  <% order(current_page.children).each do |section| %>
-    <h2><%= section.data.title %></h2>
-    <div class="guides">
+  <p>
+    <a href="/about">Read the vision →</a>
+  </p>
+</aside>
+
+<% current_page.data.sections.map{ |name| site.get(name) }.each do |section| %>
+  <h2><%= section.data.title %></h2>
+  <div class="guides">
     <% section.children.each do |page| %>
       <h4><%= link_to_page page %></h4>
       <p><%= page.data.description %></p>
     <% end %>
   </div>
-  <% end %>
-</article>
+<% end %>
