@@ -35,9 +35,6 @@ module PageHelper
     page.asset.path
   end
 
-# https://github.com/sitepress/railsdocs/edit/main/app/content/pages/models/active_record_basics.html.md
-# https://github.com/sitepress/railsdocs/edit/main/app/content/pages/configuring.html.md
-
   def docs_edit_url(page=current_page, branch: "main")
     "https://github.com/sitepress/railsdocs/edit/#{branch}/#{page.asset.path.relative_path_from(Rails.root)}"
   end
@@ -46,4 +43,56 @@ module PageHelper
     "https://github.com/sitepress/railsdocs/commits/#{branch}/#{page.asset.path.relative_path_from(Rails.root)}"
   end
 
+  def remove_h1(&block)
+    dom = Nokogiri::HTML5.fragment(capture(&block))
+    dom.css("h1").remove
+    dom.to_html.html_safe
+  end
+
+  class TableOfContents
+    class Entry < Data.define(:text, :level, :children, :url)
+      def initialize(children: [], **kwargs)
+        super children: children, **kwargs
+      end
+    end
+
+    def initialize(html)
+      @html = html
+    end
+
+    def headers
+      # Load the HTML document
+      doc = Nokogiri::HTML5.fragment(@html)
+
+      # Initialize an empty table of contents array
+      toc = []
+
+      # Select all h1..h6 tags in the document
+      doc.css("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").each do |header|
+        # Get the text content and level of the header tag
+        header_text = header.text.strip
+        header_level = header.name[1].to_i
+        header_url = "##{header.attr("id")}"
+
+        # Add the header to the table of contents array
+        toc << Entry.new(text: header_text, level: header_level, url: header_url)
+
+        # Find the nearest parent header tag with a lower level
+        parent = toc.slice(0..-2).reverse.find { |h| h.level < header_level }
+
+        # Add the current header as a child of its parent, if it exists
+        parent.children << toc.last if parent
+      end
+
+      toc
+    end
+
+    def tree
+      headers.select { |h| h.level == 2 }
+    end
+  end
+
+  def toc(page)
+    TableOfContents.new(page_rendition(page).output).tree
+  end
 end

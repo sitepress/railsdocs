@@ -1,12 +1,43 @@
 <%= render_layout "body" do %>
-  <div class="flex flex-row flex-row-reverse gap-4">
-    <%= current_page_rendition.inspect %>
-    <nav>
-      <%= link_to "Edit", docs_edit_url, class: "font-semibold underline " %>
-      <%= link_to "History", docs_history_url, class: "font-semibold underline " %>
-    </nav>
-    <article class="prose">
-      <%= yield %>
-    </article>
+  <div class="flex flex-col gap-20">
+    <header class="flex flex-col gap-4">
+      <h1 class="font-bold text-5xl"><%= current_page.data.title %></h1>
+      <ul class="flex flex-row gap-4">
+        <li>
+          Updated <%= time_ago_in_words File.mtime current_page.asset.path %> ago
+        </li>
+        <li>
+          <%= link_to "Edit", docs_edit_url, class: "font-semibold underline " %>
+        </li>
+        <li>
+          <%= link_to "History", docs_history_url, class: "font-semibold underline " %>
+        </li>
+      </ul>
+    </header>
+
+    <div class="flex flex-row flex-row-reverse gap-20">
+      <nav class="flex flex-col gap-4">
+        <ul class="flex flex-col gap-4">
+          <%- toc(current_page).each do |h1| %>
+            <li>
+              <%=link_to h1.text, h1.url, class: "font-semibold" %>
+              <ul>
+                <% h1.children.each do |h2| %>
+                  <li class="ml-4 text-medium">
+                    <%=link_to h2.text, h2.url %>
+                  </li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+
+      <article class="prose">
+        <%= remove_h1 do %>
+          <%= yield %>
+        <% end %>
+      </article>
+    </div>
   </div>
 <% end %>
