@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/sitepress/sitepress.git
-  revision: b08b3b5de2db8670a989d656a1f1408e756bf23c
+  revision: d7ce2d1ceaed851ac392ab8500a06eff37b81fdd
   branch: version-4
   specs:
     sitepress-core (3.2.1)

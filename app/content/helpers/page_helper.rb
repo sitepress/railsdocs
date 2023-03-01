@@ -30,4 +30,20 @@ module PageHelper
   def order(pages)
     pages.sort_by { |page| page.data.fetch("order", Float::INFINITY) }
   end
+
+  def github_url(page)
+    page.asset.path
+  end
+
+# https://github.com/sitepress/railsdocs/edit/main/app/content/pages/models/active_record_basics.html.md
+# https://github.com/sitepress/railsdocs/edit/main/app/content/pages/configuring.html.md
+
+  def docs_edit_url(page=current_page, branch: "main")
+    "https://github.com/sitepress/railsdocs/edit/#{branch}/#{page.asset.path.relative_path_from(Rails.root)}"
+  end
+
+  def docs_history_url(page=current_page, branch: "main")
+    "https://github.com/sitepress/railsdocs/commits/#{branch}/#{page.asset.path.relative_path_from(Rails.root)}"
+  end
+
 end

@@ -30,9 +30,10 @@ class ApplicationMarkdown < MarkdownRails::Renderer::Rails
 
   def header(text, header_level)
     header_id = text.downcase.gsub(/[^\w\d\s]/, "").gsub(" ", "-")
-    content_tag "h#{header_level}", id: header_id do
-      helpers.link_to text.html_safe, "##{header_id}"
+    helpers.link_to "##{header_id}", class: "no-underline" do
+      content_tag "h#{header_level}", id: header_id do
+        text.html_safe
+      end
     end
   end
-
 end

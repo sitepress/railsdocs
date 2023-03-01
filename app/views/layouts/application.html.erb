@@ -1,5 +1,12 @@
 <%= render_layout "body" do %>
-  <article class="prose">
-    <%= yield %>
-  </article>
+  <div class="flex flex-row flex-row-reverse gap-4">
+    <%= current_page_rendition.inspect %>
+    <nav>
+      <%= link_to "Edit", docs_edit_url, class: "font-semibold underline " %>
+      <%= link_to "History", docs_history_url, class: "font-semibold underline " %>
+    </nav>
+    <article class="prose">
+      <%= yield %>
+    </article>
+  </div>
 <% end %>
