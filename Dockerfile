@@ -24,7 +24,7 @@ FROM base as build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev
+    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config
 
 # Install application gems
 COPY Gemfile Gemfile.lock .
@@ -40,13 +40,12 @@ RUN bundle exec bootsnap precompile app/ lib/
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 RUN SECRET_KEY_BASE=DUMMY ./bin/rails assets:precompile
 
-
 # Final stage for app image
 FROM base
 
 # Install packages needed for deployment
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y postgresql-client && \
+    apt-get install --no-install-recommends -y libsqlite3-0 && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Run and own the application files as a non-root user for security
