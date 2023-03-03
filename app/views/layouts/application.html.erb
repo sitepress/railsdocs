@@ -1,6 +1,6 @@
 <%= render_layout "body" do %>
-  <div class="grid grid-cols-2 gap-20 grid-cols-[max-content_minmax(0,_1fr)]">
-    <header class="col-span-2 flex flex-col gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20 grid-cols-[max-content_minmax(0,_1fr)]">
+    <header class="md:col-span-2 flex flex-col gap-4">
       <h1 class="font-bold text-5xl"><%= current_page.data.title %></h1>
       <ul class="flex flex-row gap-4">
         <li>
@@ -38,7 +38,7 @@
       </ul>
     </nav>
 
-    <footer class="col-span-2 prose max-w-fit text-center">
+    <footer class="md:col-span-2 prose max-w-fit text-center">
       <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License</p>
 
       <p>"Rails", "Ruby on Rails", and the Rails logo are trademarks of David Heinemeier Hansson. All rights reserved.</p>
