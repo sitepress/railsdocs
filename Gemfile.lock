@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/sitepress/sitepress.git
-  revision: 64c6ab040480f6d25cfebb029839fa78d9b4c3e2
+  revision: 0f63ee41f5ed4b05772c5cfbab2c7a06208dd00b
   branch: version-4
   specs:
     sitepress-core (3.2.1)
@@ -144,7 +144,7 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
     minitest (5.17.0)
-    msgpack (1.6.0)
+    msgpack (1.6.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -165,7 +165,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.6.2)
+    rack (2.2.6.3)
     rack-canonical-host (1.1.0)
       addressable (> 0, < 3)
       rack (>= 1.0.0, < 3)
