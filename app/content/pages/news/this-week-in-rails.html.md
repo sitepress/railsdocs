@@ -1,5 +1,6 @@
 ---
 title: This Week in Rails
+url: https://world.hey.com/this.week.in.rails/
 rss_url: https://world.hey.com/this.week.in.rails/feed.atom
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Ruby Weekly
+url: https://rubyweekly.com/
 rss_url: https://rubyweekly.com/rss/
 ---
 

@@ -86,3 +86,11 @@ gem "dockerfile-rails", ">= 1.2", :group => :development
 gem "sqlite3", "~> 1.6"
 
 gem "phlex-rails", "~> 0.8.0"
+
+gem "rss", "~> 0.2.9"
+
+gem "http", "~> 5.1"
+
+gem "feedjira", "~> 3.2"
+
+gem "nokogiri", "~> 1.14"

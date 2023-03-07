@@ -1,5 +1,17 @@
 ---
-title: News
+title: News & Updates 📰
 subtitle: Get the latest updates in Rails, Ruby, and the community
+layout: body
 ---
 
+<%= render_layout "body" do %>
+  <h1 class="text-5xl font-bold mb-20"><%= current_page.data.fetch("title") %></h1>
+  <section class="flex flex-col gap-10">
+    <% NewsPageModel.rss_items.sort_by{|item, _| item.published }.reverse.each do |item, page| %>
+      <div class="flex flex-col gap-x-4">
+        <h2 class="font-bold text-lg underline"><%= link_to item.title, item.url %></h2>
+        <p><%= item.published.to_date.to_formatted_s(:long_ordinal) %> in <%= link_to page.title, page.data.fetch("url"), class: "underline" %></p>
+      </div>
+    <% end %>
+  </section>
+<% end %>
