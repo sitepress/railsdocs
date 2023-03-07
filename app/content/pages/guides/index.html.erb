@@ -1,0 +1,36 @@
+---
+title: Guides
+subtitle: A walk through all the major components and libraries of Rails
+layout: article
+sections:
+  - start_here
+  - models
+  - views
+  - controllers
+  - other_components
+  - digging_deeper
+  - extending_rails
+  - contributing
+  - policies
+  - release_notes
+---
+
+<aside class="px-8 py-2 rounded shadow-xl border rotate-1 hover:rotate-0 hover:scale-105 transition dark:border-neutral-600 hidden md:block">
+  <p>
+    <span class="font-semibold">Hello there! 👋</span> This website explores ways the <a href="https://guides.rubyonrails.org">Rails Guides</a> could be improved. <a href="/about">Read about the dream →</a>
+  </p>
+
+  <p>
+    You can see how Rails docs could be easier to edit by opening any of the docs below and clicking "Edit".
+  </p>
+</aside>
+
+<% current_page.data.sections.map{ |name| site.get(File.join("guides", name)) }.each do |section| %>
+  <h2><%= section.data.title %></h2>
+  <div class="guides">
+    <% section.children.each do |page| %>
+      <h3><%= link_to_page page %></h3>
+      <p><%= page.data.description %></p>
+    <% end %>
+  </div>
+<% end %>

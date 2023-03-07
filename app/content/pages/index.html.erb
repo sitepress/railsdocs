@@ -1,35 +1,40 @@
 ---
 title: Rails Docs
 layout: article
-sections:
-  - start_here
-  - models
-  - views
-  - controllers
-  - other_components
-  - digging_deeper
-  - extending_rails
-  - contributing
-  - policies
-  - release_notes
 ---
 
-<aside class="px-8 py-2 rounded shadow-xl border rotate-1 hover:rotate-0 hover:scale-105 transition dark:border-neutral-600 hidden md:block">
-  <p>
-    <span class="font-semibold">Hello there! 👋</span> This website explores ways the <a href="https://guides.rubyonrails.org">Rails Guides</a> could be improved. <a href="/about">Read about the dream →</a>
-  </p>
+<h2>Build your first Rails app</h2>
+<ol class="numbered">
+  <li>
+    <a href="https://www.ruby-lang.org/en/documentation/installation/">Install Ruby</a>
+  </li>
 
-  <p>
-    You can see how Rails docs could be easier to edit by opening any of the docs below and clicking "Edit".
-  </p>
-</aside>
+  <li>
+      <p>Install Rails and generate your first app</p>
+      <pre><code>$ gem install rails
+$ rails new demo-app
+$ cd new demo-app
+$ bin/rails server</code></pre>
+  </li>
 
-<% current_page.data.sections.map{ |name| site.get(name) }.each do |section| %>
-  <h2><%= section.data.title %></h2>
-  <div class="guides">
-    <% section.children.each do |page| %>
-      <h3><%= link_to_page page %></h3>
-      <p><%= page.data.description %></p>
-    <% end %>
-  </div>
-<% end %>
+  <li>
+    Read the <a href="/guides">Getting Started with Rails</a> guide
+  </li>
+</ol>
+
+<hr/>
+
+<h2>Resources</h2>
+<p>Whether your a seasons pro or just starting out, these resources will help you get the most out of Rails.</p>
+
+<nav class="not-prose grid grid-cols-2 gap-10 justify-items-stretch mt-8">
+  <%= render CardComponent.new title: "Guides 📕", href: "/guides" do %>
+    <p>Walk through all the major components of Rails.</p>
+  <% end %>
+  <%= render CardComponent.new title: "API Docs 📚", href: "https://api.rubyonrails.org/" do %>
+    <p>A reference with all of Rails's classes, methods, and more.</p>
+  <% end %>
+  <%= render CardComponent.new title: "Plugins 🛠️", href: "https://www.ruby-toolbox.com" do %>
+    <p>Research which gems work best for extending your Rails applications.</p>
+  <% end %>
+</nav>

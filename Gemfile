@@ -84,3 +84,5 @@ gem "rouge", "~> 4.1"
 gem "dockerfile-rails", ">= 1.2", :group => :development
 
 gem "sqlite3", "~> 1.6"
+
+gem "phlex-rails", "~> 0.8.0"
