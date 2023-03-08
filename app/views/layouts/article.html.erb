@@ -1,5 +1,19 @@
 <%= render_layout "body" do %>
-  <h1 class="text-5xl font-bold mb-20"><%= current_page.data.fetch("title") %></h1>
+  <header class="flex flex-col gap-4 mb-20">
+    <h1 class="font-bold text-5xl"><%= current_page.data.title %></h1>
+    <ul class="flex flex-row gap-4">
+      <li>
+        Updated <%= time_ago_in_words File.mtime current_page.asset.path %> ago
+      </li>
+      <li>
+        <%= link_to "Edit", docs_edit_url, class: "font-semibold underline " %>
+      </li>
+      <li>
+        <%= link_to "History", docs_history_url, class: "font-semibold underline " %>
+      </li>
+    </ul>
+  </header>
+
   <article class="prose dark:prose-invert">
     <%= yield %>
   </article>
